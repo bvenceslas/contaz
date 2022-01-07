@@ -3,7 +3,7 @@ import './index.css';
 const Home = () => {
     return ( 
         <div className="home">
-            <h3>Home Component</h3>
+            <h3>My Contacts</h3>
         </div>
      );
 }
