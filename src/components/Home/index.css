@@ -26,6 +26,7 @@
 }
 
 .contact {
+    text-decoration: none;
     width: 35%;
     margin: 30px auto;
     padding: 10px;

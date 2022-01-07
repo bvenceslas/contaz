@@ -6,6 +6,7 @@ import gender from '../../assets/gender.png';
 import email from '../../assets/email.png';
 import phoneNumber from '../../assets/phone-number.png';
 import factory from '../../assets/work.png';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -68,33 +69,32 @@ const Home = () => {
                         { error }
                     </div>
             }
-
             {   // if the data is ready             
                 contacts && 
                     contacts.map(contact => (
                         <div className="contact-list" key={contact.id}>
-                            <div className="contact" >
-                                <div className="name">
-                                    <img src={name} alt="contact name" />
-                                    <p>{`${contact.firstname} ${contact.lastname}`}</p>
-                                </div>
-                                <div className="gender">
-                                    <img src={gender} alt="contact gender" />
-                                    <p>{contact.gender}</p>
-                                </div>
-                                <div className="phone-number">
-                                    <img src={phoneNumber} alt="contact phone number" />
-                                    <p>{contact.phone}</p>
-                                </div>
-                                <div className="email">
-                                    <img src={email} alt="contact email" />
-                                    <p>{contact.email}</p>
-                                </div>
-                                <div className="factory">
-                                    <img src={factory} alt="contact factory" />
-                                    <p>{contact.factory}</p>
-                                </div>
-                            </div>
+                                <Link className="contact" to={`/contacts/${contact.id}`}>
+                                    <div className="name">
+                                        <img src={name} alt="contact name" />
+                                        <p>{`${contact.firstname} ${contact.lastname}`}</p>
+                                    </div>
+                                    <div className="gender">
+                                        <img src={gender} alt="contact gender" />
+                                        <p>{contact.gender}</p>
+                                    </div>
+                                    <div className="phone-number">
+                                        <img src={phoneNumber} alt="contact phone number" />
+                                        <p>{contact.phone}</p>
+                                    </div>
+                                    <div className="email">
+                                        <img src={email} alt="contact email" />
+                                        <p>{contact.email}</p>
+                                    </div>
+                                    <div className="factory">
+                                        <img src={factory} alt="contact factory" />
+                                        <p>{contact.factory}</p>
+                                    </div>
+                                </Link>
                         </div> 
                     ))     
             }

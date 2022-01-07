@@ -15,7 +15,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route exact path="/add-contact" element={<CreateContact />} />
-              <Route exact path="/contact/:id" element={<ContactDetails />} />
+              <Route exact path="/contacts/:id" element={<ContactDetails />} />
               <Route exact path='*' element={<NotFound />} />
             </Routes>
           </div>
