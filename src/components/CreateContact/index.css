@@ -1,0 +1,96 @@
+/* Create contact styles */
+
+.header-create-contact {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px dashed red;
+}
+
+.header-create-contact h2 {
+    color: #0984e3;
+    font-size: 26px;
+    margin-left: 15px;
+}
+
+.contact-inputs{
+    width: 50%;    
+    margin: 30px auto;
+    padding: 10px;
+    border: 1px dashed red;
+    Background-color: #ffffff;
+    box-shadow: rgba(251, 193, 200, 0.1) 0px 4px 16px, 
+    rgba(246, 172, 181, 0.1) 0px 8px 24px, 
+    rgba(251, 185, 192, 0.1) 0px 16px 56px;
+}
+
+
+.contact-inputs .input-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;    
+}
+
+.input-wrapper label{
+    width: 55px;
+    color: #636e72;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.input-wrapper input{
+    width: 80%;
+    height:35px;
+    font-size: 20px;
+    color: #0984e3;
+    border: 2px solid #0984e3;
+    border-radius: 7px;
+}
+
+.input-wrapper select{
+    width: 80%;
+    height:35px;
+    font-size: 20px;
+    color: #0984e3;
+    border: 2px solid #0984e3;
+    border-radius: 7px;
+}
+
+input:focus{
+    background-color: #c3e0f6;
+    color: black;
+    /* border: 2px solid #0984e3; */
+}
+
+select:focus{
+    background-color: #c3e0f6;
+    color: black;
+    /* border: 2px solid #0984e3; */
+}
+
+.contact-inputs button{
+    color: #636e72;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 7px 80px;
+    border: 2px dotted #0984e3;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.submit-button {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.submit-button button{
+    background-color: #0984e3;
+    color: #fff;
+}
+
