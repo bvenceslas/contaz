@@ -1,0 +1,43 @@
+/* contact list styles */
+
+.home {
+    width: 70%;
+    margin: 10px auto;
+    border: 1px solid green;
+}
+.contact-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact {
+    width: 35%;
+    margin: 30px auto;
+    padding: 10px;
+    Background-color: #ffffff;
+    box-shadow: rgba(251, 193, 200, 0.1) 0px 4px 16px, 
+    rgba(246, 172, 181, 0.1) 0px 8px 24px, 
+    rgba(251, 185, 192, 0.1) 0px 16px 56px;
+    
+}
+
+.name, .gender, .phone-number, .email, .factory {
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.name p, .gender p, .phone-number p, .factory p {
+    color: #636e72;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.email p{
+    color: #0984e3;
+    font-size: 20px;
+    margin-left: 5px;
+}
