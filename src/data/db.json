@@ -1,0 +1,50 @@
+{
+    "contacts":
+    [
+        {
+            "id":1,
+            "firstname": "Venceslas",
+            "lastname": "Josh",
+            "gender": "Homme",
+            "phone": "+243 978 125 250",
+            "email": "bvenceslas@gmail.com",
+            "factory": "Altech-RDC"
+        },
+        {
+            "id":2,
+            "firstname": "Gabriella",
+            "lastname": "Odile",
+            "gender": "Femme",
+            "phone": "+243 978 125 250",
+            "email": "gabgab@gmail.com",
+            "factory": "Skilly Hub"
+        },
+        {
+            "id":3,
+            "firstname": "Agence",
+            "lastname": "CAA",
+            "gender": "Non Specifié",
+            "phone": "+243 978 125 250",
+            "email": "agencecaa@gmail.com",
+            "factory": "CAA Goma"
+        },
+        {
+            "id":4,
+            "firstname": "Petro",
+            "lastname": "Sangya",
+            "gender": "Homme",
+            "phone": "+243 978 125 250",
+            "email": "petro@gmail.com",
+            "factory": "Fellowship"
+        },
+        {
+            "id":5,
+            "firstname": "Venceslas",
+            "lastname": "Josh",
+            "gender": "Homme",
+            "phone": "+243 978 125 250",
+            "email": "bvenceslas@gmail.com",
+            "factory": "Altech-RDC"
+        }
+    ]
+}
