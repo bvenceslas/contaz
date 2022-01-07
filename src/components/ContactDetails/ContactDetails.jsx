@@ -42,12 +42,34 @@ const ContactDetails = () => {
             })
     }, [contactsURL]);
 
+    const handleDelete = () => {
+            fetch(contactsURL, {
+                method: 'DELETE',
+            })
+            .then(response => {
+                if(!response.ok){
+                    setContact(null);
+                    throw new Error('Cannot fetch contact from this url');
+                }else{
+                    return response.json()
+                }
+            })
+            .then(() => {
+                navigate('/');
+            })
+            .catch(err => {
+                setLoading(false);
+                setError(err.message);
+            });        
+    }
+
 
     return ( 
         <div className="contact-details">
             <div className="contact-info-header">
                 <img src={contactInfo} alt="contact list" />
-                <h2>Contact X</h2>
+                { contact &&<h2>{`${contact.firstname} ${contact.lastname}`}</h2>}
+                { !contact &&<h2>Contact Details</h2>}
             </div>
 
             { // if the data are loading
@@ -101,7 +123,7 @@ const ContactDetails = () => {
                 
                 
                         <div className="delete-btn">                        
-                            <button>
+                            <button onClick={handleDelete}>
                                 <img src={drop} alt="delete contact" />
                                 Delete Contact
                             </button>
