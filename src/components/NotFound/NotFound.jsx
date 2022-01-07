@@ -1,7 +1,20 @@
+import './index.css';
+import PageNotFound from '../../assets/page-not-found.png';
+
 const NotFound = () => {
+
+    const handleRedirect = () => {
+        // redirect to home page
+
+    }
+
     return ( 
         <div className="not-found">
-            <h1>404 Page not found</h1>
+            <img 
+                src={PageNotFound} 
+                alt="page not found"
+                onClick={handleRedirect} 
+            />
         </div>
      );
 }
