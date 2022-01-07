@@ -1,5 +1,20 @@
 /* Create contact styles */
 
+.header-create-contact {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px dashed red;
+}
+
+.header-create-contact h2 {
+    color: #0984e3;
+    font-size: 26px;
+    margin-left: 15px;
+}
+
 .contact-inputs{
     width: 50%;    
     margin: 30px auto;

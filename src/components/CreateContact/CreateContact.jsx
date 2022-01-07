@@ -13,7 +13,7 @@ const CreateContact = () => {
     }
     return ( 
         <div className="create-contact">
-            <div className="header">
+            <div className="header-create-contact">
                 <img src={addContact} alt="add contact" />
                 <h2>Add a new contact</h2>
             </div>

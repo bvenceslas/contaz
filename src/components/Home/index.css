@@ -1,16 +1,17 @@
 /* contact list styles */
 
 .header {
-    width: 21%;
+    width: 30%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
+    border: 1px dashed red;
 }
 
 .header h2 {
     color: #0984e3;
-    font-size: 30px;
+    margin-left: 15px;
 }
 
 .home {
