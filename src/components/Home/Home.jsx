@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home">
             <div className="header">
                 <img src={contactList} alt="contact list" />
-                <h3>My Contacts</h3>
+                <h2>My Contacts</h2>
             </div>
 
             <div className="contact-list">
