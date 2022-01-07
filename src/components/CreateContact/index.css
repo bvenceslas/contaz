@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    border: 1px dashed red;
 }
 
 .header-create-contact h2 {
@@ -19,7 +18,6 @@
     width: 50%;    
     margin: 30px auto;
     padding: 10px;
-    border: 1px dashed red;
     Background-color: #ffffff;
     box-shadow: rgba(251, 193, 200, 0.1) 0px 4px 16px, 
     rgba(246, 172, 181, 0.1) 0px 8px 24px, 
@@ -36,7 +34,7 @@
 }
 
 .input-wrapper label{
-    width: 55px;
+    width: 70px;
     color: #636e72;
     font-weight: bold;
     text-align: right;
@@ -78,7 +76,7 @@ select:focus{
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
-    padding: 7px 80px;
+    padding: 7px 70px;
     border: 2px dotted #0984e3;
     border-radius: 7px;
     cursor: pointer;

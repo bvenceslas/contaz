@@ -30,7 +30,7 @@ const Home = () => {
                 setLoading(false);
                 setError(null);
                 setContacts(data);
-                console.log(`data >>`, data)
+                console.log(`home data >>`, data)
             })
             .catch(err => {
                 setLoading(false);
@@ -76,7 +76,7 @@ const Home = () => {
                                 <Link className="contact" to={`/contacts/${contact.id}`}>
                                     <div className="name">
                                         <img src={name} alt="contact name" />
-                                        <p>{`${contact.firstname} ${contact.lastname}`}</p>
+                                        <p>{`${contact.firstName} ${contact.lastName}`}</p>
                                     </div>
                                     <div className="gender">
                                         <img src={gender} alt="contact gender" />

@@ -34,7 +34,7 @@ const ContactDetails = () => {
                 setLoading(false);
                 setError(null);
                 setContact(data);
-                console.log(`data >>`, data)
+                console.log(`contact detail data >>`, data)
             })
             .catch(err => {
                 setLoading(false);
@@ -68,7 +68,7 @@ const ContactDetails = () => {
         <div className="contact-details">
             <div className="contact-info-header">
                 <img src={contactInfo} alt="contact list" />
-                { contact &&<h2>{`${contact.firstname} ${contact.lastname}`}</h2>}
+                { contact &&<h2>{`${contact.firstName} ${contact.lastName}`}</h2>}
                 { !contact &&<h2>Contact Details</h2>}
             </div>
 
@@ -100,7 +100,7 @@ const ContactDetails = () => {
                         <div className="contact">
                             <div className="name">
                                 <img src={name} alt="contact name" />
-                                <p>{`${contact.firstname} ${contact.lastname}`}</p>
+                                <p>{`${contact.firstName} ${contact.lastName}`}</p>
                             </div>
                             <div className="gender">
                                 <img src={gender} alt="contact gender" />

@@ -7,7 +7,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px dotted green;
 }
 
 .navbar h1{

@@ -2,39 +2,21 @@
   "contacts": [
     {
       "id": 1,
-      "firstname": "Venceslas",
-      "lastname": "Josh",
+      "firstName": "Guillain",
+      "lastName": "Bisimwa",
       "gender": "Homme",
-      "phone": "+243 978 125 250",
-      "email": "bvenceslas@gmail.com",
-      "factory": "Altech-RDC"
+      "phone": "097887873267",
+      "email": "guillainbisimwa@gmail.com",
+      "factory": "Altech"
     },
     {
-      "id": 2,
-      "firstname": "Gabriella",
-      "lastname": "Odile",
+      "id": "0978125253",
+      "firstName": "Quetsia",
+      "lastName": "olga",
       "gender": "Femme",
-      "phone": "+243 978 125 250",
-      "email": "gabgab@gmail.com",
-      "factory": "Skilly Hub"
-    },
-    {
-      "id": 3,
-      "firstname": "Agence",
-      "lastname": "CAA",
-      "gender": "Non Specifié",
-      "phone": "+243 978 125 250",
-      "email": "agencecaa@gmail.com",
-      "factory": "CAA Goma"
-    },
-    {
-      "id": 4,
-      "firstname": "Petro",
-      "lastname": "Sangya",
-      "gender": "Homme",
-      "phone": "+243 978 125 250",
-      "email": "petro@gmail.com",
-      "factory": "Fellowship"
+      "phone": "0978125253",
+      "email": "quetsiaolga@gmail.com",
+      "factory": "Lumitel"
     }
   ]
 }
