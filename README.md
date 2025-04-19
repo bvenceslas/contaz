@@ -1,48 +1,54 @@
-# contaz
-contact management frontend app
-## Getting Started
+# React + TypeScript + Vite
 
-The project is public
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Built With
+Currently, two official plugins are available:
 
-- React js
-- Json Server
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## How it works
+## Expanding the ESLint configuration
 
-once you've cloned the project, open it in visual studio
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-First, install dependencies using this command in the terminal
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-`yarn` or `yarn install` 
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-Second, in order to use data, make sure to run this command
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-`npx json-server --watch src/data/db.json --port 7000`
-
-As we're using json server, the file located to *src/data/db.json* will run and create some endpoints as if it was coming from a backend app.
-
-Third, you can now run the project locally by typing `yarn start`
-
-or you can run this [live version](https://contaz.netlify.app/)
-
-Next, have a good hacking
-
-
-
-## Author
-
-👤 Venceslas Burongu
-
-- Github: @bvenceslas [@bvenceslas](https://github.com/bvenceslas)
-- Twitter: [@bvenceslas](https://twitter.com/bvenceslas)
-- Linkedin: [Venceslas Burongu](https://www.linkedin.com/in/venceslas-burongu-8271b519a/)
-
-## 🤝Contributing
-
-Contributions, issues and feature requests are welcome!!!
-
-## Show your support
-
-Give a ⭐️ if you like this project!
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    'react-x': reactX,
+    'react-dom': reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs['recommended-typescript'].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+})
+```
