@@ -1,11 +1,15 @@
 import "./App.css";
+import { ContactForm } from "./components/ContactForm";
+import { ContactList } from "./components/ContactList";
 
 function App() {
   return (
     <>
-      <div>
-        Welcome to <span className="text-red-700 text-3xl">Contaz</span>
-      </div>
+      <main className="p-4 w-[100%] border border-red-700">
+        <h1 className="text-2xl font-bold mb-[50px]">📇 Contact Manager</h1>
+        <ContactForm />
+        <ContactList />
+      </main>
     </>
   );
 }
